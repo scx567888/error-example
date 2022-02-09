@@ -34,7 +34,7 @@
     position: absolute;
 }
 
-/* 重要 !!!!!  避免嵌套动画延迟 */
+/* If I add the CSS bug will be fix */
 /*.scx-group-list-move .scx-group-list-move {*/
 /*    transition: unset;*/
 /*}*/
