@@ -1,16 +1,13 @@
 <template>
-  <scx-group v-model="data" :beforeAdd="aaa"
-             :beforeRemove="bbb"
-             :default-item-value="{name:'',age:'',c:[]}"
-  >
+  <scx-group v-model="data" :default-item-value="{name:'',age:'',c:[]}">
     <template #default="{item,index}">
       <div class="test-input-wrapper">
-        姓名
+        Name
         <input v-model="item.name"/>
-        年龄:
+        Age:
         <input v-model="item.age"/>
       </div>
-      <h3>子数据</h3>
+      <h3>H3H3H3H3</h3>
       <scx-group v-model="item.c" :default-item-value="{b:'',d:''}">
         <template #default="h">
           <div class="test-input-wrapper">
@@ -21,12 +18,6 @@
           </div>
         </template>
       </scx-group>
-    </template>
-    <template #addButtonContent>
-      <button>自定义的父级添加按钮</button>
-    </template>
-    <template #deleteButtonContent="{index,item}">
-      <button>自定义的父级删除按钮 此条数据的姓名是 : {{ item.name }}</button>
     </template>
   </scx-group>
   {{ data }}
@@ -57,17 +48,6 @@ const data = ref([{
     {b: '', d: ''},
   ]
 }]);
-
-function aaa(v) {
-  v.name = 11111
-  return true
-}
-
-function bbb(i) {
-  console.log(i)
-  alert("删除成功");
-  return true
-}
 </script>
 <style scoped>
 .test-input-wrapper {
