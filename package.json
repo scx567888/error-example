@@ -1,0 +1,20 @@
+{
+  "name": "error-example",
+  "version": "1.0.0",
+  "description": "error-example",
+  "license": "MIT",
+  "author": "scx567888",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.2.30"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^2.2.0",
+    "vite": "^2.8.0"
+  }
+}
