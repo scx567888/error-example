@@ -6,8 +6,8 @@
           <slot :index="i" :item="item"></slot>
         </div>
         <div style="position: absolute;top: 0;right: 0;">
-          <button v-if="i>0" @click="moveUp(i)">↑</button>
-          <button v-if="i<list.length-1" @click="moveDown(i)">↓</button>
+          <button v-if="i>0" @click="moveUp(i)" style="background-color: red">↑</button>
+          <button v-if="i<list.length-1" @click="moveDown(i)" style="background-color: green">↓</button>
           <button @click="groupItemDelete(i)">X</button>
         </div>
       </div>
